@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: use_key_in_widget_constructors
 class HomePage extends StatelessWidget {
   final int days = 30;
   final String name = "Atish";
@@ -7,13 +8,16 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dhiren ki ma ki chut"),
+        // ignore: prefer_const_constructors
+        title: Text("Tinu Noobda"),
       ),
       body: Center(
+        // ignore: avoid_unnecessary_containers
         child: Container(
           child: Text("$name first app by hello $days"),
         ),
       ),
+      // ignore: prefer_const_constructors
       drawer : Drawer(),
     );
   }
